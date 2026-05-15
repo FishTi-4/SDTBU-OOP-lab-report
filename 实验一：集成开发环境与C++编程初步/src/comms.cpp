@@ -10,7 +10,7 @@ namespace COMMS
         // this->address = address;
     };
 
-    Comms* COMMS::build(std::string name, std::string email, std::string phone)
+    Comms* build(std::string name, std::string email, std::string phone)
     {
         std::regex mail(R"(^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$)");
         std::regex ph(R"(^1[3-9]\d{9}$)");
